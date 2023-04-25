@@ -21,7 +21,7 @@
           </h2>
         </div>
 
-        <ul class="flex gap-6 mt-8">
+        <ul class="flex gap-6 mt-8 justify-center md:justify-start ">
           <li>
             <a
               href="/"
@@ -119,7 +119,7 @@
       </div>
 
       <div
-        class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4"
+        class="hidden md:grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4"
       >
         <div>
           <p class="font-medium text-gray-900 border-2 border-gray-900 rounded-md px-3 w-fit hover:cursor-pointer transition-all duration-150 hover:bg-[#18181823]">Services</p>
@@ -245,7 +245,7 @@
       </div>
     </div>
 
-    <p class="text-xs text-gray-500">
+    <p class="text-xs text-gray-500 text-center md:text-left">
       &copy; 2023. Delite. All rights reserved.
     </p>
   </div>
