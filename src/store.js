@@ -1,6 +1,6 @@
 import { writable } from "svelte/store";
 
-export const menuItems = writable([
+export let menuItems = writable([
   {
     title: "Basmati Khazana",
     smallItems: [
@@ -10,6 +10,7 @@ export const menuItems = writable([
         veg: true,
         visible: false,
         prize: 270,
+        oldprize: 270,
       },
       {
         name: "Veg. Hyderabadi Biryani",
@@ -17,6 +18,7 @@ export const menuItems = writable([
         veg: true,
         visible: false,
         prize: 270,
+        oldprize: 270,
       },
       {
         name: "Veg. Handi Biryani",
@@ -24,6 +26,7 @@ export const menuItems = writable([
         veg: true,
         visible: false,
         prize: 270,
+        oldprize: 270,
       },
       {
         name: "Cheese Biryani",
@@ -31,6 +34,7 @@ export const menuItems = writable([
         veg: true,
         visible: false,
         prize: 270,
+        oldprize: 270,
       },
       {
         name: " Paneer Biryani",
@@ -38,6 +42,7 @@ export const menuItems = writable([
         veg: true,
         visible: false,
         prize: 270,
+        oldprize: 270,
       },
       {
         name: "Chicken Dum Biryani",
@@ -45,6 +50,7 @@ export const menuItems = writable([
         veg: false,
         visible: false,
         prize: 270,
+        oldprize: 270,
       },
       {
         name: "Kolkatta Chicken Biryani",
@@ -52,6 +58,7 @@ export const menuItems = writable([
         veg: false,
         visible: false,
         prize: 270,
+        oldprize: 270,
       },
       {
         name: "Egg Biryani",
@@ -59,6 +66,7 @@ export const menuItems = writable([
         veg: false,
         visible: false,
         prize: 270,
+        oldprize: 270,
       },
     ],
   },
@@ -71,6 +79,7 @@ export const menuItems = writable([
         veg: true,
         visible: false,
         prize: 110,
+        oldprize: 110,
       },
       {
         name: "Jain Pav Bhaji",
@@ -78,6 +87,7 @@ export const menuItems = writable([
         veg: true,
         visible: false,
         prize: 90,
+        oldprize: 90,
       },
       {
         name: "Cheese Pav Bhaji",
@@ -85,6 +95,7 @@ export const menuItems = writable([
         veg: true,
         visible: false,
         prize: 120,
+        oldprize: 120,
       },
       {
         name: "Toast Pav Bhaji",
@@ -92,6 +103,7 @@ export const menuItems = writable([
         veg: true,
         visible: false,
         prize: 130,
+        oldprize: 130,
       },
       {
         name: "Butter Pav (Single)",
@@ -99,6 +111,7 @@ export const menuItems = writable([
         veg: true,
         visible: false,
         prize: 10,
+        oldprize: 10,
       },
       {
         name: "Plain Pav (2 Pc)",
@@ -106,8 +119,8 @@ export const menuItems = writable([
         veg: false,
         visible: false,
         prize: 5,
+        oldprize: 5,
       },
-
     ],
   },
   {
@@ -119,6 +132,7 @@ export const menuItems = writable([
         veg: true,
         visible: false,
         prize: 220,
+        oldprize: 220,
       },
       {
         name: "Paneer Butter Masala",
@@ -126,6 +140,7 @@ export const menuItems = writable([
         veg: true,
         visible: false,
         prize: 200,
+        oldprize: 200,
       },
       {
         name: "Veg . Pattiyala",
@@ -133,6 +148,7 @@ export const menuItems = writable([
         veg: true,
         visible: false,
         prize: 200,
+        oldprize: 200,
       },
       {
         name: "Panner Makkanwala",
@@ -140,6 +156,7 @@ export const menuItems = writable([
         veg: true,
         visible: false,
         prize: 180,
+        oldprize: 180,
       },
       {
         name: " Dum Aloo Kashmiri",
@@ -147,6 +164,7 @@ export const menuItems = writable([
         veg: true,
         visible: false,
         prize: 200,
+        oldprize: 200,
       },
       {
         name: "Paneer Kolhapuri",
@@ -154,8 +172,8 @@ export const menuItems = writable([
         veg: false,
         visible: false,
         prize: 210,
+        oldprize: 210,
       },
-      
     ],
   },
   {
@@ -167,6 +185,7 @@ export const menuItems = writable([
         veg: true,
         visible: false,
         prize: 120,
+        oldprize: 120,
       },
       {
         name: "Veg. Schezwan Fried Rice",
@@ -174,6 +193,7 @@ export const menuItems = writable([
         veg: true,
         visible: false,
         prize: 140,
+        oldprize: 140,
       },
       {
         name: "Triple Schezwan Rice",
@@ -181,6 +201,7 @@ export const menuItems = writable([
         veg: true,
         visible: false,
         prize: 210,
+        oldprize: 210,
       },
       {
         name: "Chicken Schezwan Rice",
@@ -188,6 +209,7 @@ export const menuItems = writable([
         veg: false,
         visible: false,
         prize: 150,
+        oldprize: 150,
       },
       {
         name: "Chicken Triple Rice",
@@ -195,6 +217,7 @@ export const menuItems = writable([
         veg: false,
         visible: false,
         prize: 220,
+        oldprize: 220,
       },
       {
         name: "Chicken Manchurian Rice",
@@ -202,6 +225,7 @@ export const menuItems = writable([
         veg: false,
         visible: false,
         prize: 190,
+        oldprize: 190,
       },
       {
         name: "Egg Schezwan Rice",
@@ -209,8 +233,8 @@ export const menuItems = writable([
         veg: false,
         visible: false,
         prize: 120,
+        oldprize: 120,
       },
-      
     ],
   },
 ]);
