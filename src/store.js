@@ -1,0 +1,216 @@
+import { writable } from "svelte/store";
+
+export const menuItems = writable([
+  {
+    title: "Basmati Khazana",
+    smallItems: [
+      {
+        name: "Veg. Biryani",
+        qnt: 0,
+        veg: true,
+        visible: false,
+        prize: 270,
+      },
+      {
+        name: "Veg. Hyderabadi Biryani",
+        qnt: 0,
+        veg: true,
+        visible: false,
+        prize: 270,
+      },
+      {
+        name: "Veg. Handi Biryani",
+        qnt: 0,
+        veg: true,
+        visible: false,
+        prize: 270,
+      },
+      {
+        name: "Cheese Biryani",
+        qnt: 0,
+        veg: true,
+        visible: false,
+        prize: 270,
+      },
+      {
+        name: " Paneer Biryani",
+        qnt: 0,
+        veg: true,
+        visible: false,
+        prize: 270,
+      },
+      {
+        name: "Chicken Dum Biryani",
+        qnt: 0,
+        veg: false,
+        visible: false,
+        prize: 270,
+      },
+      {
+        name: "Kolkatta Chicken Biryani",
+        qnt: 0,
+        veg: false,
+        visible: false,
+        prize: 270,
+      },
+      {
+        name: "Egg Biryani",
+        qnt: 0,
+        veg: false,
+        visible: false,
+        prize: 270,
+      },
+    ],
+  },
+  {
+    title: "Pav Bhaji",
+    smallItems: [
+      {
+        name: "Pav Bhaji",
+        qnt: 0,
+        veg: true,
+        visible: false,
+        prize: 110,
+      },
+      {
+        name: "Jain Pav Bhaji",
+        qnt: 0,
+        veg: true,
+        visible: false,
+        prize: 90,
+      },
+      {
+        name: "Cheese Pav Bhaji",
+        qnt: 0,
+        veg: true,
+        visible: false,
+        prize: 120,
+      },
+      {
+        name: "Toast Pav Bhaji",
+        qnt: 0,
+        veg: true,
+        visible: false,
+        prize: 130,
+      },
+      {
+        name: "Butter Pav (Single)",
+        qnt: 0,
+        veg: true,
+        visible: false,
+        prize: 10,
+      },
+      {
+        name: "Plain Pav (2 Pc)",
+        qnt: 0,
+        veg: false,
+        visible: false,
+        prize: 5,
+      },
+
+    ],
+  },
+  {
+    title: "Main Course",
+    smallItems: [
+      {
+        name: "Veg Peshwari",
+        qnt: 0,
+        veg: true,
+        visible: false,
+        prize: 220,
+      },
+      {
+        name: "Paneer Butter Masala",
+        qnt: 0,
+        veg: true,
+        visible: false,
+        prize: 200,
+      },
+      {
+        name: "Veg . Pattiyala",
+        qnt: 0,
+        veg: true,
+        visible: false,
+        prize: 200,
+      },
+      {
+        name: "Panner Makkanwala",
+        qnt: 0,
+        veg: true,
+        visible: false,
+        prize: 180,
+      },
+      {
+        name: " Dum Aloo Kashmiri",
+        qnt: 0,
+        veg: true,
+        visible: false,
+        prize: 200,
+      },
+      {
+        name: "Paneer Kolhapuri",
+        qnt: 0,
+        veg: false,
+        visible: false,
+        prize: 210,
+      },
+      
+    ],
+  },
+  {
+    title: "Chinese Cuisine",
+    smallItems: [
+      {
+        name: "Veg. Fried Rice",
+        qnt: 0,
+        veg: true,
+        visible: false,
+        prize: 120,
+      },
+      {
+        name: "Veg. Schezwan Fried Rice",
+        qnt: 0,
+        veg: true,
+        visible: false,
+        prize: 140,
+      },
+      {
+        name: "Triple Schezwan Rice",
+        qnt: 0,
+        veg: true,
+        visible: false,
+        prize: 210,
+      },
+      {
+        name: "Chicken Schezwan Rice",
+        qnt: 0,
+        veg: false,
+        visible: false,
+        prize: 150,
+      },
+      {
+        name: "Chicken Triple Rice",
+        qnt: 0,
+        veg: false,
+        visible: false,
+        prize: 220,
+      },
+      {
+        name: "Chicken Manchurian Rice",
+        qnt: 0,
+        veg: false,
+        visible: false,
+        prize: 190,
+      },
+      {
+        name: "Egg Schezwan Rice",
+        qnt: 0,
+        veg: false,
+        visible: false,
+        prize: 120,
+      },
+      
+    ],
+  },
+]);
