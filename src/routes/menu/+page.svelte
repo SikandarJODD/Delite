@@ -3,6 +3,7 @@
   import { menuItems } from "./../../store";
   $: menu = $menuItems;
   import MenuBox from "$lib/menuPg/MenuBox.svelte";
+  import PicknParcel from "../../lib/menuPg/PicknParcel.svelte";
   let x = 0;
   let handleData = (ent) => {
     console.log("hello", ent.detail);
@@ -64,8 +65,9 @@
         />
       {/each}
     </div>
-    <div class="div2 bg-yellow-100 flex justify-center">
+    <div class="div2 bg-yellow-100 flex flex-col ">
       <OrderedItem />
+      <PicknParcel />
     </div>
   </div>
 </main>
