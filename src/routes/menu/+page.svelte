@@ -39,7 +39,13 @@
       u.filter((i) =>
         i.smallItems.filter((j) => {
           if (j.name === item.name) {
-            j.qnt -= 1;
+            if (j.qnt === 1) {
+              j.prize = j.oldprize;
+              j.visible = false;
+            } else {
+              j.qnt -= 1;
+              j.prize = j.oldprize * j.qnt;
+            }
           }
         })
       )
@@ -55,7 +61,9 @@
 
 <main class="relative">
   <div class={x > 700 ? "parent" : "flex flex-col-reverse"}>
-    <div class="div1 flex flex-wrap md:px-20 md:my-10 mt-5 md:mt-0 justify-center">
+    <div
+      class="div1 flex flex-wrap md:px-20 md:my-10 mt-5 md:mt-0 justify-center"
+    >
       {#each menu as mni}
         <!-- svelte-ignore missing-declaration -->
         <MenuBox
@@ -77,7 +85,7 @@
       </div>
     {:else}
       <div
-        class="div2 bg-gradient-to-b border-gray-800  from-emerald-300 to-white flex flex-col "
+        class="div2 bg-gradient-to-b border-gray-800 from-emerald-300 to-white flex flex-col"
         in:fly={{ y: 200, duration: 2000 }}
       >
         <OrderedItem />
