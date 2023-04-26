@@ -18,7 +18,7 @@
   };
 </script>
 
-<main class="box border rounded-2xl  border-gray-900 m-3 p-2 md:w-[380px]">
+<main class="box border rounded-2xl hover:shadow-xl hover:shadow-gray-400 transition-all duration-150 hover:bg-yellow-400 border-gray-900 m-3 p-2 md:w-[380px]">
   <h3
     class="bxtitle font-bold text-md border-2 border-gray-900 w-fit px-2 rounded-md bg-[#a3fb91] m-2"
   >
@@ -48,12 +48,12 @@
           <!-- svelte-ignore missing-declaration -->
           <button
             on:click={handleData(item)}
-            class="border-2 border-gray-800 px-1 rounded-md mx-2">+</button
+            class="border-2 pb-1 border-gray-800 px-1 rounded-md mx-2">+</button
           >
-          <span>{item.qnt}</span>
+          <span  >{item.qnt}</span>
           <button
             on:click={decr(item)}
-            class="border-2 border-gray-800 px-1 rounded-md mx-2">-</button
+            class="border-2 text-center border-gray-800 px-1 pb-1 rounded-md mx-2">-</button
           >
         {/if}
       </li>
