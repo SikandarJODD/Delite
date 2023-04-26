@@ -48,7 +48,7 @@
   ];
 </script>
 
-<main class=" h-fit p-4 m-4 rounded-lg border-2 border-orange-500">
+<main class=" h-fit mt-5 p-4 m-4 rounded-lg border-2 border-orange-500">
   <h2 class="text-2xl font-bold">Ordered Items</h2>
   <ul class="list-decimal ml-5">
     {#each kitu as item}

@@ -96,4 +96,7 @@
 </main>
 
 <style>
+  input {
+    margin-top: 10px;
+  }
 </style>

@@ -1,4 +1,5 @@
 <script>
+  import { fly } from "svelte/transition";
   import OrderedItem from "$lib/menuPg/OrderedItem.svelte";
   import { menuItems } from "./../../store";
   $: menu = $menuItems;
@@ -44,11 +45,15 @@
       )
     );
   };
+  let realVisible = 1;
+  setTimeout(() => {
+    realVisible = 0;
+  }, 2000);
 </script>
 
 <svelte:window bind:innerWidth={x} />
 
-<main>
+<main class="relative">
   <div class={x > 700 ? "parent" : "flex flex-col-reverse"}>
     <div class="div1 flex flex-wrap px-20 my-10">
       {#each menu as mni}
@@ -62,10 +67,15 @@
         />
       {/each}
     </div>
-    <div class="div2 bg-yellow-100 flex flex-col ">
-      <OrderedItem />
-      <PicknParcel />
-    </div>
+    {#if realVisible === 0}
+      <div
+        class="div2 bg-gradient-to-b border-l-2 border-gray-800 border-t-2 fixed top-14 right-0 from-emerald-300 to-white flex flex-col w-2/6 h-full"
+        in:fly={{ y: 200, duration: 2000 }}
+      >
+        <OrderedItem />
+        <PicknParcel />
+      </div>
+    {/if}
   </div>
 </main>
 
