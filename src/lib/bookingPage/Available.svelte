@@ -1,18 +1,35 @@
 <script>
+  import { availNum } from "../../store";
   import Forbidden from "$lib/forbidden.png";
   import Available from "$lib/available.png";
+  $: avn = 0;
+  availNum.subscribe((val) => {
+    avn = val;
+  });
 </script>
 
 <main>
   <div class="parent">
     <div class="div1">1</div>
-    <div class="div2 bgGreen">
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <div
+      class="div2 bgGreen {avn === 2 && 'bgSelected'}"
+      on:click={() => {
+        availNum.set(2);
+      }}
+    >
       <img src={Available} alt="Avail" />
       <span>2</span>
     </div>
     <div class="div3">3</div>
     <div class="div4">4</div>
-    <div class="div5 bgGreen">
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <div
+      class="div5 bgGreen {avn === 5 && 'bgSelected'}"
+      on:click={() => {
+        availNum.set(5);
+      }}
+    >
       <img src={Available} alt="Avail" />
       <span>5</span>
     </div>
@@ -21,12 +38,24 @@
     <div class="div8">8</div>
     <div class="div9">9</div>
     <div class="div10">10</div>
-    <div class="div11 bgGreen">
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <div
+      class="div11 bgGreen {avn === 11 && 'bgSelected'}"
+      on:click={() => {
+        availNum.set(11);
+      }}
+    >
       <img src={Available} alt="Avail" />
       <span>11</span>
     </div>
     <div class="div12">12</div>
-    <div class="div13 bgGreen">
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <div
+      class="div13 bgGreen {avn === 13 && 'bgSelected'}"
+      on:click={() => {
+        availNum.set(13);
+      }}
+    >
       <img src={Available} alt="Avail" />
       <span>13</span>
     </div>
@@ -40,6 +69,16 @@
   .bgGreen {
     background: lightgreen !important;
     border: 2px solid rgb(1, 22, 50);
+    transition: all 0.3s ease;
+  }
+  .bgGreen:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .bgSelected {
+    background: rgb(20, 113, 236) !important;
+    border: 2px solid rgb(19, 248, 110) !important;
   }
   .parent {
     width: 700px;

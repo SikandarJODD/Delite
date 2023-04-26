@@ -238,3 +238,5 @@ export let menuItems = writable([
     ],
   },
 ]);
+
+export let availNum = writable(2);
