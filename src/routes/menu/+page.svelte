@@ -55,7 +55,7 @@
 
 <main class="relative">
   <div class={x > 700 ? "parent" : "flex flex-col-reverse"}>
-    <div class="div1 flex flex-wrap px-20 my-10">
+    <div class="div1 flex flex-wrap md:px-20 md:my-10 mt-5 md:mt-0 justify-center">
       {#each menu as mni}
         <!-- svelte-ignore missing-declaration -->
         <MenuBox
@@ -67,9 +67,17 @@
         />
       {/each}
     </div>
-    {#if realVisible === 0}
+    {#if realVisible === 0 && x > 800}
       <div
         class="div2 bg-gradient-to-b border-l-2 border-gray-800 border-t-2 fixed top-14 right-0 from-emerald-300 to-white flex flex-col w-2/6 h-full"
+        in:fly={{ y: 200, duration: 2000 }}
+      >
+        <OrderedItem />
+        <PicknParcel />
+      </div>
+    {:else}
+      <div
+        class="div2 bg-gradient-to-b border-gray-800  from-emerald-300 to-white flex flex-col "
         in:fly={{ y: 200, duration: 2000 }}
       >
         <OrderedItem />
