@@ -23,8 +23,10 @@
   );
   $: lastString =
     tifukitu.length > 0
-      ? tifukitu[0].map((e) => {
-          return `${e.name} - ${e.qnt} - ₹${e.prize}`;
+      ? tifukitu.map((e) => {
+          return e.map((i) => {
+            return `${i.name} - ${i.qnt} - ₹${i.prize}`;
+          });
         })
       : " ";
   $: console.log(lastString, "bbb");
@@ -46,7 +48,7 @@
   let name = "";
   let phone = "";
   let uploadData = async () => {
-    console.log(name, phone, lastString, total);
+    console.log(name, phone, lastString, total, tifukitu);
     const { data, error } = await supabase.from("pickParcel").insert([
       {
         name: name,
@@ -87,8 +89,10 @@
         bind:value={phone}
       />
     </label>
-    <div class="text-center" >
-      <button class="btn btn-outline border-green-600 hover:bg-emerald-500 mt-4 text-gray-700 hover:text-gray-900">
+    <div class="text-center">
+      <button
+        class="btn btn-outline border-green-600 hover:bg-emerald-500 mt-4 text-gray-700 hover:text-gray-900"
+      >
         Pick & Parcel Order
       </button>
     </div>
