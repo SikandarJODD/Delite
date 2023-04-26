@@ -1,4 +1,5 @@
 <script>
+  import PlaceBook from "./../../lib/bookingPage/PlaceBook.svelte";
   import BookSeat from "$lib/bookingPage/BookSeat.svelte";
   let x = 0;
   import Available from "$lib/bookingPage/Available.svelte";
@@ -13,9 +14,14 @@
       </div>
       <div class="div2">
         <BookSeat />
+        <PlaceBook />
       </div>
     </div>
-    <!-- content here -->
+  {:else}
+    <div>
+      <BookSeat />
+      <PlaceBook />
+    </div>
   {/if}
 </main>
 

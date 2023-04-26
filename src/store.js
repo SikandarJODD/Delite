@@ -240,3 +240,5 @@ export let menuItems = writable([
 ]);
 
 export let availNum = writable(2);
+export let totalPrize = writable(0);
+export let orderedItems = writable([]);

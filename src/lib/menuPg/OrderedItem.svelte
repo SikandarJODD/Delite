@@ -1,6 +1,7 @@
 <script>
   import { goto } from "$app/navigation";
-  import { menuItems } from "./../../store";
+  import { menuItems, totalPrize } from "./../../store";
+
   $: menuk = $menuItems;
   $: mint = menuk.map((item) => {
     return {
@@ -16,6 +17,7 @@
     })
     .flat()
     .reduce((a, b) => a + b, 0);
+  totalPrize.update((n) => (n = total));
 
   let smallItems = [
     {

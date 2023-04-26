@@ -1,6 +1,6 @@
 <script>
   import supabase from "$lib/db";
-  import { menuItems } from "./../../store";
+  import { menuItems, orderedItems, totalPrize } from "./../../store";
   $: menuk = $menuItems;
   $: mint = menuk.map((item) => {
     return {
@@ -29,6 +29,7 @@
           });
         })
       : " ";
+  $: orderedItems.update((n) => (n = lastString));
   $: console.log(lastString, "bbb");
   $: total = kitu
     .map((item) => {
@@ -36,15 +37,7 @@
     })
     .flat()
     .reduce((a, b) => a + b, 0);
-  /* 
-    {#each kitu as item}
-      {#each item.smallItems as item}
-        <li class="text-lg">
-          {item.name} - {item.qnt} - ₹{item.prize}
-        </li>
-      {/each}
-    {/each}
-    */
+  $: totalPrize.update((n) => (n = total));
   let name = "";
   let phone = "";
   let uploadData = async () => {
@@ -57,6 +50,10 @@
         total: total,
       },
     ]);
+    name = "";
+    phone = "";
+    orderedItems.update((n) => (n = []));
+    totalPrize.update((n) => (n = 0));
   };
 </script>
 
