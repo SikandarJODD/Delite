@@ -37,7 +37,7 @@ export let menuItems = writable([
         oldprize: 200,
       },
       {
-        name: " Paneer Biryani",
+        name: "Paneer Biryani",
         qnt: 0,
         veg: true,
         visible: false,
@@ -53,7 +53,7 @@ export let menuItems = writable([
         oldprize: 260,
       },
       {
-        name: "Kolkatta Chicken Biryani",
+        name: "Kolkata Chicken Biryani",
         qnt: 0,
         veg: false,
         visible: false,
@@ -143,7 +143,7 @@ export let menuItems = writable([
         oldprize: 200,
       },
       {
-        name: "Veg . Pattiyala",
+        name: "Veg. Pattiyala",
         qnt: 0,
         veg: true,
         visible: false,
