@@ -1,4 +1,7 @@
 <script>
-    /** @type {import('./$types').PageData} */
-    export let data;
+  import Available from "$lib/bookingPage/Available.svelte";
 </script>
+
+<main class="md:px-24 text-center">
+  <Available />
+</main>

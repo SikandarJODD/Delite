@@ -1,4 +1,5 @@
 <script>
+  import { goto } from "$app/navigation";
   import { menuItems } from "./../../store";
   $: menuk = $menuItems;
   $: mint = menuk.map((item) => {
@@ -62,7 +63,14 @@
   <span class="text-xl font-bold text-sky-500">Total : ₹{total}</span>
 
   <div class="flex justify-center flex-col md:flex-row">
-    <button class="btn btn-outline btn-accent ca p-2 m-2"> Booking </button>
+    <button
+      on:click={() => {
+        goto("/bookings");
+      }}
+      class="btn btn-outline btn-accent ca p-2 m-2"
+    >
+      Pre Booking</button
+    >
   </div>
 </main>
 
