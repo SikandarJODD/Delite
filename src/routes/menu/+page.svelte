@@ -48,7 +48,7 @@
   let realVisible = 1;
   setTimeout(() => {
     realVisible = 0;
-  }, 2000);
+  }, 800);
 </script>
 
 <svelte:window bind:innerWidth={x} />
