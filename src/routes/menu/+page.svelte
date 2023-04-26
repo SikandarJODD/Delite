@@ -6,7 +6,6 @@
   import PicknParcel from "../../lib/menuPg/PicknParcel.svelte";
   let x = 0;
   let handleData = (ent) => {
-    console.log("hello", ent.detail);
     let item = ent.detail;
     menuItems.update((u) =>
       u.filter((i) =>
@@ -20,7 +19,6 @@
     );
   };
   let updateFirst = (ent) => {
-    console.log("hello", ent.detail);
     let item = ent.detail;
     menuItems.update((u) =>
       u.filter((i) =>
@@ -35,7 +33,6 @@
   };
 
   let decr = (ent) => {
-    console.log("hello", ent.detail);
     let item = ent.detail;
     menuItems.update((u) =>
       u.filter((i) =>

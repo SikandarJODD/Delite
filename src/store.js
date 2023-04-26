@@ -116,7 +116,7 @@ export let menuItems = writable([
       {
         name: "Plain Pav (2 Pc)",
         qnt: 0,
-        veg: false,
+        veg: true,
         visible: false,
         prize: 5,
         oldprize: 5,
@@ -169,7 +169,7 @@ export let menuItems = writable([
       {
         name: "Paneer Kolhapuri",
         qnt: 0,
-        veg: false,
+        veg: true,
         visible: false,
         prize: 210,
         oldprize: 210,
