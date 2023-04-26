@@ -27,6 +27,7 @@
           if (j.name === item.name) {
             j.visible = true;
             j.qnt += 1;
+            j.prize = j.oldprize * j.qnt;
           }
         })
       )
@@ -41,6 +42,7 @@
           if (j.name === item.name) {
             if (j.qnt === 1) {
               j.prize = j.oldprize;
+              j.qnt = 0;
               j.visible = false;
             } else {
               j.qnt -= 1;

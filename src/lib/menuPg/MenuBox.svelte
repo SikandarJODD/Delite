@@ -28,7 +28,7 @@
     {#each smallItems as item}
       <li class="items-center flex my-1 cursor-pointer">
         <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <span on:click|once={updatefirst(item)}>{item.name}</span>
+        <span on:click={updatefirst(item)}>{item.name}</span>
         {#if item.veg}
           <span
             class="text-green-500 opacity-80 text-[8px] mx-1 mt-1 items-center"
