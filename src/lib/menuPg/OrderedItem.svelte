@@ -62,12 +62,7 @@
   <span class="text-xl font-bold text-sky-500">Total : ₹{total}</span>
 
   <div class="flex justify-center flex-col md:flex-row">
-    <button class="bg-sky-500 text-white rounded-lg p-2 m-2">
-      Pick & Parcel Order
-    </button>
-    <button class="bg-sky-500 text-white rounded-lg p-2 m-2">
-      Booking Order
-    </button>
+    <button class="btn btn-outline btn-accent ca p-2 m-2"> Booking </button>
   </div>
 </main>
 

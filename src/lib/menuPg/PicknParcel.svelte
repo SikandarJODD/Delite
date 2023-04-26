@@ -87,8 +87,8 @@
         bind:value={phone}
       />
     </label>
-    <div>
-      <button class="btn btn-outline btn-success mt-4">
+    <div class="text-center" >
+      <button class="btn btn-outline border-green-600 hover:bg-emerald-500 mt-4 text-gray-700 hover:text-gray-900">
         Pick & Parcel Order
       </button>
     </div>
