@@ -1,6 +1,8 @@
 <script>
   let x = 0;
   import { availNum } from "../../store";
+  $: scoops = $availNum;
+  $: console.log(scoops);
 </script>
 
 <svelte:window bind:innerWidth={x} />
@@ -10,32 +12,41 @@
     <div class="btn-group my-3">
       <input
         type="radio"
-        on:click={() => availNum.set(2)}
+        on:click={() => {
+          availNum.set(2);
+        }}
+        value="2"
         name="options"
         data-title="2"
-        class="btn bg-base-100"
-        checked
+        class="btn bg-base-100 hover:bg-green-200"
       />
       <input
         type="radio"
-        on:click={() => availNum.set(5)}
+        on:click={() => {
+          availNum.set(5);
+        }}
         name="options"
         data-title="5"
-        class="btn bg-base-100"
+        value="5"
+        class="btn bg-base-100 hover:bg-green-200"
       />
       <input
         type="radio"
         on:click={() => availNum.set(11)}
         name="options"
+        value="11"
         data-title="11"
-        class="btn bg-base-100"
+        class="btn bg-base-100 hover:bg-green-200"
+        bind:group={scoops}
       />
       <input
         type="radio"
         on:click={() => availNum.set(13)}
         name="options"
         data-title="13"
-        class="btn bg-base-100"
+        value="13"
+        class="btn bg-base-100 hover:bg-green-200"
+        bind:group={scoops}
       />
     </div>
   </div>

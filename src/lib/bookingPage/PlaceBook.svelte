@@ -6,14 +6,18 @@
   let numofCustomer = 0;
 
   let bookTable = async () => {
-    const { data, error } = await supabase.from("bookingData").insert([
-      {
-        name: name,
-        customer: numofCustomer,
-        foodItems: JSON.stringify($orderedItems),
-        foodTotal: $totalPrize,
-      },
-    ]);
+    if (name.length >0 && numofCustomer !== 0) {
+      const { data, error } = await supabase.from("bookingData").insert([
+        {
+          name: name,
+          customer: numofCustomer,
+          foodItems: JSON.stringify($orderedItems),
+          foodTotal: $totalPrize,
+        },
+      ]);
+    } else {
+      alert("Please fill all the fields");
+    }
   };
 </script>
 
@@ -23,6 +27,7 @@
       <label for="name">
         Name :
         <input
+          required
           type="text"
           placeholder="Full Name"
           class="input input-bordered input-accent w-full max-w-xs"
@@ -35,9 +40,10 @@
       <label for="No.of customers">
         No.of customers :
         <input
+          required
           type="text"
           placeholder="Type here"
-          class="input input-bordered input-accent w-full max-w-xs"
+          class="input input-bordered input-accent w-40 max-w-xs"
           id="No.of customers"
           bind:value={numofCustomer}
         />
