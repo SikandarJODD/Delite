@@ -54,7 +54,7 @@
       </label>
     </div>
   </form>
-  <div class="mt-5">
+  <div class="mt-5" on:click={bookTable}>
     <form>
       <script
         src="https://checkout.razorpay.com/v1/payment-button.js"
