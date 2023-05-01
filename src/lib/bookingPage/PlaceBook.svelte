@@ -58,7 +58,7 @@
     <form>
       <script
         src="https://checkout.razorpay.com/v1/payment-button.js"
-        data-payment_button_id="pl_LkVt72J6TCpvVB"
+        data-payment_button_id="pl_LkWVJOzsMUWiyG"
         async
       >
       </script>
@@ -76,7 +76,7 @@
     color: rgba(0, 19, 61, 0.84) !important;
     margin-left: 10px;
   }
-  .mintV{
+  .mintV {
     visibility: visible !important;
   }
 </style>
