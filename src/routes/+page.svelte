@@ -42,7 +42,7 @@
 <svelte:head>
   <title>Delite Restaurant 🧀</title>
   <link rel="shortcut icon" href={fastFood} type="image/x-icon" />
-  <meta name="title" content="Delite Restaurant" />
+  <meta name="title" content="Delite Restaurant 🧀" />
   <meta name="description" content="Delite Restaurant" />
   <link rel="shortcut icon" href={fastFood} type="image/x-icon" />
   <meta
@@ -52,7 +52,7 @@
   <meta name="keywords" content="Delite, Restaurant, Services, Food" />
   <meta name="author" content="Saloni Mahehswari" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="Delite Restaurant" />
+  <meta property="og:title" content="Delite Restaurant 🧀" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://delite-zeta.vercel.app/" />
 </svelte:head>
