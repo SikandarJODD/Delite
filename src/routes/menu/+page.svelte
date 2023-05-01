@@ -1,5 +1,5 @@
 <script>
-  import fastFood from "$lib/fast-food.png";
+  import fastFood from "$lib/fastfood.png";
   import { fly } from "svelte/transition";
   import OrderedItem from "$lib/menuPg/OrderedItem.svelte";
   import { menuItems } from "./../../store";
@@ -67,11 +67,8 @@
   <meta name="title" content="Delite Restaurant" />
   <meta name="description" content="Delite Restaurant" />
   <meta property="og:image" content={fastFood} />
-  <meta property="twitter:image" content={fastFood} />
-  <meta property="twitter:title" content="Delite Restaurant" />
-  <meta property="twitter:description" content="Delite Restaurant" />
   <meta name="keywords" content="Delite, Restaurant, Services, Food" />
-  <meta name="author" content="Delite Restaurant" />
+  <meta name="author" content="Saloni Maheshwari" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:title" content="Delite Restaurant" />
   <meta property="og:type" content="website" />

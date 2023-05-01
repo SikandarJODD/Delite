@@ -3,7 +3,7 @@
   import BookSeat from "$lib/bookingPage/BookSeat.svelte";
   let x = 0;
   import Available from "$lib/bookingPage/Available.svelte";
-  import fastFood from "$lib/fast-food.png";
+  import fastFood from "$lib/fastfood.png";
 </script>
 
 <svelte:head>
@@ -16,7 +16,7 @@
   <meta property="twitter:title" content="Delite Restaurant" />
   <meta property="twitter:description" content="Delite Restaurant" />
   <meta name="keywords" content="Delite, Restaurant, Services, Food" />
-  <meta name="author" content="Delite Restaurant" />
+  <meta name="author" content="Saloni Maheshwari" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:title" content="Delite Restaurant" />
   <meta property="og:type" content="website" />

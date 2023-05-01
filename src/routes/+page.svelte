@@ -1,6 +1,6 @@
 <script>
   import ImgComp from "./../lib/components/ImgComp.svelte";
-  import fastFood from "$lib/fast-food.png";
+  import fastFood from "$lib/fastfood.png";
   import FineFood from "$lib/fine.png";
   import Fine2 from "$lib/fine2.png";
   import Fine3 from "$lib/fine3.png";
@@ -45,11 +45,8 @@
   <meta name="title" content="Delite Restaurant" />
   <meta name="description" content="Delite Restaurant" />
   <meta property="og:image" content={fastFood} />
-  <meta property="twitter:image" content={fastFood} />
-  <meta property="twitter:title" content="Delite Restaurant" />
-  <meta property="twitter:description" content="Delite Restaurant" />
   <meta name="keywords" content="Delite, Restaurant, Services, Food" />
-  <meta name="author" content="Delite Restaurant" />
+  <meta name="author" content="Saloni Mahehswari" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:title" content="Delite Restaurant" />
   <meta property="og:type" content="website" />
