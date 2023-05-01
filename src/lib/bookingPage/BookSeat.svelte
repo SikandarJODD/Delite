@@ -45,7 +45,7 @@
         name="options"
         data-title="13"
         value="13"
-        class="btn bg-base-100 hover:bg-green-200"
+        class="btn bg-base-100  hover:bg-green-200"
         bind:group={scoops}
       />
     </div>

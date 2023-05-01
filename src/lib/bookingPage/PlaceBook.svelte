@@ -1,12 +1,14 @@
 <script>
+  import OrCode from "$lib/QrCode.jpeg";
   import supabase from "$lib/db";
   import { totalPrize, orderedItems } from "../../store";
   console.log($orderedItems, $totalPrize, "bop");
+
   let name = "";
   let numofCustomer = 0;
 
   let bookTable = async () => {
-    if (name.length >0 && numofCustomer !== 0) {
+    if (name.length > 0 && numofCustomer !== 0) {
       const { data, error } = await supabase.from("bookingData").insert([
         {
           name: name,
@@ -21,8 +23,10 @@
   };
 </script>
 
-<main class=" my-10 border-2 border-gray-900 rounded-lg p-5 bg-slate-200 mx-10">
-  <form class="text-left ml-3" on:submit|preventDefault={bookTable}>
+<main
+  class=" flex flex-col my-10 border-2 w-52 md:w-[500px] md:justify-between border-gray-900 rounded-lg p-5 bg-slate-200 mx-10"
+>
+  <form class="text-left ml-3">
     <div class="my-3">
       <label for="name">
         Name :
@@ -30,7 +34,7 @@
           required
           type="text"
           placeholder="Full Name"
-          class="input input-bordered input-accent w-full max-w-xs"
+          class="input input-bordered input-accent w-44 max-w-xs"
           id="name"
           bind:value={name}
         />
@@ -49,10 +53,24 @@
         />
       </label>
     </div>
-    <div>
-      <button class="btn btn-outline btn-primary">Book</button>
-    </div>
   </form>
+  <div>
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <form class="mt-5" on:click|preventDefault={bookTable}>
+      <script
+        src="https://checkout.razorpay.com/v1/payment-button.js"
+        data-payment_button_id="pl_LkVt72J6TCpvVB"
+        async
+      >
+      </script>
+    </form>
+  </div>
+  <!-- <div> -->
+  <!-- <img src={OrCode} alt="" class="h-[400px]" /> -->
+  <!-- <button class="btn btn-outline-success"
+      ><a href="https://rzp.io/i/hZQ9M0p7Kd">Payment</a></button
+    > -->
+  <!-- </div> -->
 </main>
 
 <style>

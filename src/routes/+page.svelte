@@ -11,7 +11,7 @@
   let foodImg = [
     {
       imgSrc: FineFood,
-      bg: " from-green-400 to-slate-100",
+      bg: "bg-gradient-to-b from-emerald-500 to-blue-200",
     },
     {
       imgSrc: Fine2,
@@ -75,15 +75,14 @@
       class=" hidden lg:flex max-w-sm rounded-lg absolute top-[-15px] left-[-15px] scale-110 -rotate-45"
     />
     <div
-      class="border-2 px-5 py-5 md:py-14 md:mr-10 border-gray-800 rounded-lg md:w-3/5 shd"
+      class="border-2 px-5 py-5 md:py-14 md:mr-10 border-gray-900 rounded-lg md:w-3/5 shd"
     >
       <h1 class="text-3xl text-center md:text-left md:text-5xl font-bold">
         Delite Restaraunts & Services
       </h1>
       <p class="py-6 w-4/5 hidden md:flex">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-        excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a
-        id nisi.
+        Delite Restaurant is a restaurant that offers a variety of dishes and a
+        variety of services. We offer a variety of dishes from different parts of the India.
       </p>
       <div
         class="text-center mt-3 md:mt-0 flex flex-col md:flex-row md:text-left"
