@@ -1,4 +1,5 @@
 <script>
+  import fastFood from "$lib/fast-food.png";
   import { fly } from "svelte/transition";
   import OrderedItem from "$lib/menuPg/OrderedItem.svelte";
   import { menuItems } from "./../../store";
@@ -60,7 +61,22 @@
 </script>
 
 <svelte:window bind:innerWidth={x} />
-
+<svelte:head>
+  <title>Delite Restaurant 🧀 | Menu</title>
+  <link rel="shortcut icon" href={fastFood} type="image/x-icon" />
+  <meta name="title" content="Delite Restaurant" />
+  <meta name="description" content="Delite Restaurant" />
+  <meta property="og:image" content={fastFood} />
+  <meta property="twitter:image" content={fastFood} />
+  <meta property="twitter:title" content="Delite Restaurant" />
+  <meta property="twitter:description" content="Delite Restaurant" />
+  <meta name="keywords" content="Delite, Restaurant, Services, Food" />
+  <meta name="author" content="Delite Restaurant" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Delite Restaurant" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://delite-zeta.vercel.app/" />
+</svelte:head>
 <main class="relative">
   <div class={x > 700 ? "parent" : "flex flex-col-reverse"}>
     <div
