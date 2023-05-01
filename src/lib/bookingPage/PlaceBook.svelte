@@ -24,7 +24,7 @@
 </script>
 
 <main
-  class=" flex flex-col my-10 border-2 w-52 md:w-[500px] md:justify-between border-gray-900 rounded-lg p-5 bg-slate-200 mx-10"
+  class=" flex flex-col my-10 border-2 w-72 md:w-[500px] md:justify-between border-gray-900 rounded-lg p-5 bg-slate-200 mx-10"
 >
   <form class="text-left ml-3">
     <div class="my-3">
