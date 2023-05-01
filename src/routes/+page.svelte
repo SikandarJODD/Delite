@@ -44,7 +44,7 @@
   <link rel="shortcut icon" href={fastFood} type="image/x-icon" />
   <meta name="title" content="Delite Restaurant" />
   <meta name="description" content="Delite Restaurant" />
-  <meta property="og:image" content={fastFood} />
+  <meta property="og:image" content="{fastFood}" />
   <meta name="keywords" content="Delite, Restaurant, Services, Food" />
   <meta name="author" content="Saloni Mahehswari" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
