@@ -72,7 +72,7 @@
 
           <li>
             <a
-              href="/"
+              href="https://twitter.com/Sikandar_Bhide"
               rel="noreferrer"
               target="_blank"
               class="text-gray-700 transition hover:text-sky-400"
@@ -94,7 +94,7 @@
 
           <li>
             <a
-              href="/"
+              href="https://github.com/SikandarJODD/Delite"
               rel="noreferrer"
               target="_blank"
               class="text-gray-700 transition hover:text-blue-900"

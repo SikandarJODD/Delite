@@ -100,7 +100,7 @@
       </div>
     {:else}
       <div
-        class="div2 bg-gradient-to-b border-gray-800 from-emerald-300 to-white flex flex-col"
+        class="div2 bg-gradient-to-b border-gray-800 from-emerald-300 to-white flex flex-col "
         in:fly={{ y: 200, duration: 2000 }}
       >
         <OrderedItem />
